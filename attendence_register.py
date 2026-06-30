@@ -27,6 +27,9 @@ class Attendance:
     def get_attendance(self):
         return self.register
     
-a = Attendance(30)
-a.fill_attendance([2, 4, 13, 22, 10])
+present_roll = [2, 4, 13, 22, 10]
+total_students = 30
+
+a = Attendance(total_students)
+a.fill_attendance(present_roll)
 print(a.get_attendance())

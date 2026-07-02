@@ -14,7 +14,6 @@ class ConveyorBelt:
         else:
             print("Invalid slot number.")
 
-    # Check product at a slot
     def check_slot(self, slot):
         if 0 <= slot < self.size:
             if self.belt[slot] is None:
@@ -24,7 +23,6 @@ class ConveyorBelt:
         else:
             print("Invalid slot number.")
 
-    # Find product
     def find_product(self, product):
         if product in self.belt:
             print(f"Product found at slot {self.belt.index(product)}")
@@ -39,14 +37,13 @@ class ConveyorBelt:
         else:
             print("Invalid slot number.")
 
-    # Check if belt is full
+    
     def is_full(self):
         if None not in self.belt:
             print("Conveyor belt is FULL.")
         else:
             print("Conveyor belt is NOT FULL.")
 
-    # Display conveyor belt
     def display(self):
         print("\nConveyor Belt Status")
         for i in range(self.size):
@@ -54,7 +51,6 @@ class ConveyorBelt:
         print()
 
 
-# ---------------- Main Program ----------------
 
 cb = ConveyorBelt()
 
